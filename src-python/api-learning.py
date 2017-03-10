@@ -1,5 +1,15 @@
 #coding:utf-8
 
+# -------------------------------
+# 这是一个粗略的实现
+# 把  https://api.shanbay.com/oauth2/authorize/?client_id=05623ce286a180e4e8c1&response_type=code&state=123 
+# 复制到浏览器中，然后授权后跳转到回调页面
+# 把回调页面后面的ＩＤ号复制，替换 CODE 变量，然后运行
+# 最后的test 中，可以看到 用户的信息，以及查询单词和 上传单词
+# 其他的 api 按理论上都可以这是实现
+
+# -------------------------------
+
 # 怎么使用 api 接口
 #
 # 利用 app_key, app_secret, 和 callback_url 构造一个url 
@@ -163,7 +173,7 @@ req.add_header('Authorization', 'Bearer %s' % access_token)
 resp = urllib.request.urlopen(req)
 print (resp.read())
 
-# test 4 - PUT -DELETE
+# test 4 - PUT -DELETE - 用法
 ##PUT
 # import urllib2
 
