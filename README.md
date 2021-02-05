@@ -1,7 +1,11 @@
 # EnglishReadingCompanion
 
-**all\_kinds\_of\_file\_for\_test**:  
-可选的文件有 docx， pdf 以及 文本文件
+## 架构
+1. 数据库 neo4j
+2. web 端录入
 
-**src-python**：  
-python 程序
+
+## 目的
+1. 可解析文件（docx、pdf、txt）中所有的单词
+2. 整理出个人单词库
+3. 对单词的网络释义
